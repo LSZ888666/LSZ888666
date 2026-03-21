@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>闹钟 - Alarm Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⏰ 闹钟</h1>
+
+    <div class="clock" id="clock">00:00:00</div>
+
+    <div class="alarm-form">
+      <label for="alarm-time">设置闹钟时间：</label>
+      <input type="time" id="alarm-time" step="1">
+      <button id="set-alarm-btn">设置闹钟</button>
+    </div>
+
+    <div class="alarm-list">
+      <h2>已设置的闹钟</h2>
+      <ul id="alarm-list"></ul>
+      <p id="no-alarm-msg" class="no-alarm">暂无闹钟</p>
+    </div>
+
+    <div id="alarm-alert" class="alarm-alert hidden">
+      <div class="alarm-alert-content">
+        <p>⏰ 闹钟响了！</p>
+        <p id="alarm-alert-time"></p>
+        <button id="dismiss-btn">关闭闹钟</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
